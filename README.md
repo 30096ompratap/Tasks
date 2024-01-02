@@ -1,2 +1,2 @@
 # Tasks
-this folders have all the assisment completed by me
+this folder has all the assignment completed by me
