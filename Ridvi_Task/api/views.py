@@ -1,23 +1,3 @@
-# from django.shortcuts import render
-
-
-# from rest_framework import generics
-# from .models import Invoice, InvoiceDetail
-# from .serializers import InvoiceSerializer, InvoiceDetailSerializer
-
-# class InvoiceListCreateView(generics.ListCreateAPIView):
-#     queryset = Invoice.objects.all()
-#     serializer_class = InvoiceSerializer
-
-# class InvoiceDetailView(generics.RetrieveUpdateDestroyAPIView):
-#     queryset = Invoice.objects.all()
-#     serializer_class = InvoiceSerializer
-
-# class InvoiceDetailListCreateView(generics.ListCreateAPIView):
-#     queryset = InvoiceDetail.objects.all()
-#     serializer_class = InvoiceDetailSerializer
-
-# invoices/views.py
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
