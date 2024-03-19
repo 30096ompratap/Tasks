@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table style="border: 1;">
+        <tr>
+            <th>Office Transaction</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th><a href="{% url 'transaction' %}">+ Add Transaction</a></th>
+        </tr>
+
+        <tr>
+            <th>Date</th>
+            <th>Desc</th>
+            <th>Credit</th>
+            <th>Debit</th>
+            <th>Running Balance</th>
+        </tr>
+
+        {% for transaction in transactions %}
+            <tr>
+                <td>{{ transaction.date }}</td>
+                <td>{{ transaction.desc }}</td>
+                <td>{{ transaction.credit }}</td>
+                <td>{{ transaction.debit }}</td>
+                <td>{{ transaction.running_balance }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>

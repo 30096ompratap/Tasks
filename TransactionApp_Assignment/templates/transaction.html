@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        
+        {% csrf_token %}
+        <h1>New Transaction</h1>
+        <br>
+        <br>
+        <lable>
+            Transaction Type :
+            <label>Credit  <input type="radio" id="type" name="type" value="credit" /></label>
+            <lable>Debit   <input type="radio" id="type" name="type" value="debit" /></lable>
+        </lable>
+        <br>
+        <lable>
+            Amount :    
+            <input type="number" placeholder="Please Enter Amount" name="amount" value="amount"  />
+        </lable>
+        <br>
+        <lable>
+            Description
+            <input type="text" placeholder="Please Enter Description" name="Description" value=""  />
+        </lable>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
